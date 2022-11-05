@@ -1,0 +1,86 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: rgb(60, 42, 108);
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 100px 0 30px;
+}
+
+.form__textarea {
+  border-radius: 10px;
+  font-family: 'Arial', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  width: 500px;
+  height: 170px;
+  resize: none;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.form__textarea::-webkit-scrollbar {
+  width: 10px;
+}
+
+.form__textarea::-webkit-scrollbar-thumb {
+  background-color: rgb(136, 121, 248);
+  border-radius: 10px;
+}
+
+.form__button {
+  background-color: rgb(136, 121, 248);
+  font-size: 20px;
+  padding: 10px;
+  margin-top: 30px;
+  border-radius: 10px;
+  width: 150px;
+  cursor: pointer;
+  border: 1px solid #000;
+  transition: all 0.2s ease-out;
+  -webkit-transition: all 0.2s ease-out;
+}
+
+.form__button:hover {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.27);
+}
+
+.form__button:focus-visible, .form__textarea:focus-visible {
+  outline: none;
+}
+
+.answer {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  width: 500px;
+  height: 170px;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.answer::-webkit-scrollbar {
+  width: 10px;
+}
+
+.answer::-webkit-scrollbar-thumb {
+  background-color: rgb(136, 121, 248);
+  border-radius: 10px;
+}
