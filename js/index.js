@@ -8,7 +8,7 @@ function aliceDecrypt(message) {
     return 'The message is too long';
   }
 
-  do {
+  while (isNotDecrypted) {
     isNotDecrypted = false;
     for (let i = 0; i < message.length; i++) {
       if (message[i] === message[i + 1]) {
@@ -16,7 +16,7 @@ function aliceDecrypt(message) {
         isNotDecrypted = true;
       }
     }
-  } while (isNotDecrypted);
+  };
 
   return message;
 }
